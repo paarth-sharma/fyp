@@ -43,7 +43,14 @@ SEARCH_ENGINE_ID = ""
 ```
 ## How to
 1. copy page from: the cia website with link as: https://www.cia.gov/readingroom/document/51112a4a993247d4d8394487 and enter the whole link in the terminal.
-2. 
+2. run the script with the following command(s)
+```
+# template command and arguments
+python .\context-bridge.py --json_path "./data/processed/<processed_json_file>" --wiki_terms "<comma seperated 2 or 3 terms>" --input "< sentence with atleast 1 [REDACTED] tag in it>"
+
+# example with all parameters
+python .\context-bridge.py --json_path "./data/processed/document_1_processed.json" --wiki_terms "Sinai, Suez canal" --input "In the [REDACTED], the overall level."
+```
 
 ## Resources
 ### Papers
